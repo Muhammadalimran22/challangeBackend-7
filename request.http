@@ -1,0 +1,40 @@
+POST http://localhost:3000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "name":"wibu",
+    "email":"muhammadalimran22@gmail.com",
+    "password":"imran123",
+    "password_confirmation":"imran123"
+}
+
+###
+POST http://localhost:3000/api/v1/auth/forgot-password
+Content-Type: application/json
+
+{
+    "email":"muhammadalimran22@gmail.com"
+}
+
+###
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email":"muhammadalimran22@gmail.com",
+    "password":"iya"
+}
+
+
+###
+GET http://localhost:3000/api/v1/auth/whoami
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjk3NjQxMjQ0fQ.o6P4D0d85BL7bex4hG-mzstfDTITTW1Cu6vTOgZU9oU
+
+####
+POST http://localhost:3000/api/v1/auth/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11aGFtbWFkYWxpbXJhbjIyQGdtYWlsLmNvbSIsImlhdCI6MTcwMDI4Mzg1OX0.ROUdinVqF8PdYnFmD7-qPg_EA36ka9Fg26K6ZXFkwDo
+Content-Type: application/json
+
+{
+    "password": "iya",
+    "password_confirmation": "iya"
+}
